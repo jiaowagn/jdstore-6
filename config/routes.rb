@@ -18,7 +18,11 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :orders 
+  namespace :account do
+    resources :orders 
+  end
+
+  resources :orders
 
   resources :cart_items
 
